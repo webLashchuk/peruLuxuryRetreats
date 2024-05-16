@@ -16,6 +16,7 @@
     justify-content: space-between;
     grid-template-columns: repeat(var(--column), 1fr);
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 
     @include media(tablet) {
@@ -33,6 +34,7 @@
     justify-content: space-between;
     grid-template-columns: repeat(var(--column), 1fr);
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 
     img {

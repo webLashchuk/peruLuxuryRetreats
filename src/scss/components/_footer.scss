@@ -42,6 +42,7 @@
   .copyright {
     @include media(mobile-s) {
       max-width: 170px;
+      width: 100%;
       font-size: 14px;
       text-align: center;
     }
