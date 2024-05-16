@@ -1,0 +1,84 @@
+/* stylelint-disable declaration-no-important */
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+*[class].btn {
+  position: relative;
+  @include flex-all-center;
+  max-width: fit-content;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: var(--radius-main);
+  font-weight: var(--fw-700);
+  font-size: 20px;
+  background-color: var(--color-orange) !important;
+  font-family: var(--font-family-primary);
+  color: var(--color-dark) !important;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 28px 25px;
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.2s;
+
+  &--user {
+    color: var(--color-green-600) !important;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: var(--color-orange) !important;
+      color: var(--color-dark) !important;
+
+      @include media(tablet) {
+        color: var(--color-green-600) !important;
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  &--order {
+    padding: 28px 68px 28px 37px;
+
+    &::before {
+      @include pseudo;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      right: 38px;
+      @include contain-background;
+      background-image: var(--arrow);
+      transition: transform .2s;
+    }
+
+    &:hover {
+      background-color: transparent !important;
+
+      &::before {
+        transform: translateX(50%) translateY(-50%);
+      }
+
+      @include media(tablet) {
+        background-color: var(--color-orange) !important;
+        color: var(--color-dark) !important;
+
+        &::before {
+          transform: translateX(0) translateY(-50%);
+        }
+      }
+    }
+  }
+
+  &--contact {
+    &:hover {
+      background-color: transparent !important;
+      color: var(--color-white) !important;
+
+      @include media(tablet) {
+        background-color: var(--color-orange) !important;
+        color: var(--color-dark) !important;
+      }
+    }
+  }
+}

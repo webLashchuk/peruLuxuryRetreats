@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Home"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "home"}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "class":"",
+        "image":"home/hero.jpg",
+        "subTitle":"Experience the Enchantment of the Andes in Style",
+        "title":"Discover Peru with Luxury"
+        }
+      </include>
+
+      <include src="./html/_tours-list.html">
+        {
+        "imgFirst":"home/machu-picchu.jpg",
+        "altFirst":"Machu Picchu",
+        "titleFirst":"Machu Picchu",
+        "linkFirst":"destinations.html",
+        "imgSecond":"home/colca-canyon.jpg",
+        "altSecond":"Colca Canyon",
+        "titleSecond":"Colca Canyon",
+        "linkSecond":"destinations.html",
+        "imgThird":"home/lake-titicaca.jpg",
+        "altThird":"Lake Titicaca",
+        "titleThird":"Lake Titicaca",
+        "linkThird":"destinations.html"
+        }
+      </include>
+
+      <include src="./html/home/_about.html"></include>
+
+      <include src="./html/home/_gallery.html"></include>
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

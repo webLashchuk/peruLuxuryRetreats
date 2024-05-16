@@ -1,0 +1,71 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.contact {
+  &__wrapper {
+    @include cover-background;
+    overflow: hidden;
+    border-radius: var(--radius-image);
+    padding: 85px 64px;
+
+    @include media(mobile-l) {
+      padding: 55px 15px;
+    }
+  }
+
+  &__content {
+    @include flex-all-sb;
+    position: relative;
+    z-index: 1;
+
+    @include media(tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  h2 {
+    max-width: 360px;
+    width: 100%;
+    line-height: 1.15;
+    text-transform: none;
+    color: var(--color-white);
+
+    @include media(tablet) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__form {
+    @include flex-all-center;
+    max-width: 575px;
+    width: 100%;
+    gap: 5px;
+
+    @include media(mobile-l) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  input {
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: var(--radius-main);
+    padding: 28px 25px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input::placeholder {
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 28px 56px;
+  }
+}

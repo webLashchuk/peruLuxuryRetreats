@@ -1,0 +1,55 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.grid {
+  $root: &;
+  display: grid;
+
+  &__item {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  &[data-items="1"] {
+    --column: 3;
+    gap: 40px;
+    justify-content: space-between;
+    grid-template-columns: repeat(var(--column), 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include media(tablet) {
+      gap: 20px;
+    }
+
+    @include media(mobile-l) {
+      --column: 1;
+    }
+  }
+
+  &[data-items="2"] {
+    --column: 3;
+    gap: 27px 24px;
+    justify-content: space-between;
+    grid-template-columns: repeat(var(--column), 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+
+    img {
+      border-radius: var(--radius-image);
+      aspect-ratio: 25/27;
+    }
+
+    @include media(tablet) {
+      gap: 15px;
+    }
+
+    @include media(mobile-l) {
+      --column: 2;
+    }
+
+    @include media(mobile-s) {
+      gap: 10px;
+    }
+  }
+}

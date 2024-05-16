@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Destinations"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "destinations"}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "class":"",
+        "image":"destinations/hero.jpg",
+        "subTitle":"Our Destinations",
+        "title":"Journey Through Peru's Stunning Landscapes"
+        }
+      </include>
+
+      <include src="./html/destinations/_trip.html">
+        {
+        "subTitle":"Why Visit Here?",
+        "title":"Machu Picchu",
+        "text":"Rediscover the Lost City of the Incas, nestled high in the Andes. Machu Picchu remains an awe-inspiring
+        symbol of innovation and endurance.",
+        "titleFirst":"Breathtaking Views",
+        "textFirst":"Witness stunning panoramas of the Andean mountainscape.",
+        "titleSecond":"Historic Sanctuary",
+        "textSecond":"Explore ancient ruins that tell the story of a sophisticated civilization.",
+        "image":"machu-picchu.jpg",
+        "alt":"Machu Picchu"
+        }
+      </include>
+
+      <include src="./html/destinations/_trip.html">
+        {
+        "subTitle":"Why Explore?",
+        "title":"Lake Titicaca",
+        "text":"Experience the serene beauty of the world's highest navigable lake and its vibrant local culture,
+        steeped in centuries-old traditions.",
+        "titleFirst":"Floating Islands",
+        "textFirst":"Visit the unique Uros islands made entirely of reeds.",
+        "titleSecond":"Rich Culture",
+        "textSecond":"Engage with the indigenous Quechua and Aymara peoples.",
+        "image":"lake-titicaca.jpg",
+        "alt":"Lake Titicaca"
+        }
+      </include>
+
+      <include src="./html/destinations/_trip.html">
+        {
+        "subTitle":"Why Go Here?",
+        "title":"Colca Canyon",
+        "text":"Marvel at one of the world's deepest canyons, a spectacular natural wonder home to the majestic Andean
+        condor.",
+        "titleFirst":"Dramatic Landscapes",
+        "textFirst":"Enjoy breathtaking views of the deep canyon and terraced fields.",
+        "titleSecond":"Wildlife Spotting",
+        "textSecond":"Spot condors and other native wildlife in their natural habitat.",
+        "image":"colca-canyon.jpg",
+        "alt":"Colca Canyon"
+        }
+      </include>
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

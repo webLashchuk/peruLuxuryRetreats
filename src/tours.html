@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Tours"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "tours"}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "class":"",
+        "image":"tours/hero.jpg",
+        "subTitle":"Explore Our Tours",
+        "title":"Uncover Peru’s Wonders with Expert Guides"
+        }
+      </include>
+
+      <include src="./html/_tours-list.html">
+        {
+        "linkFirst":"#cultural",
+        "imgFirst":"tours/cultural-tours.jpg",
+        "altFirst":"Cultural Tours",
+        "titleFirst":"Cultural Tours",
+        "linkSecond":"#adventure",
+        "imgSecond":"tours/adventure-tours.jpg",
+        "altSecond":"Adventure Tours",
+        "titleSecond":"Adventure Tours",
+        "linkThird":"#vacations",
+        "imgThird":"tours/beach-vacations.jpg",
+        "altThird":"Beach Vacations",
+        "titleThird":"Beach Vacations"
+        }
+      </include>
+
+      <include src="./html/tours/_article.html">
+        {
+        "id":"cultural",
+        "title":"Inca Legacy Tour - 8 Days",
+        "text":"Explore the mystical city of Cusco, the ancient capital of the Inca Empire. Visit iconic sites such as
+        Sacsayhuamán and the Qorikancha Temple. Continue to the Sacred Valley, including the traditional market in Pisac
+        and the Ollantaytambo fortress. The journey culminates with a full day at the awe-inspiring Machu Picchu.",
+        "imageBig":"inca-big.jpg",
+        "alt":"Inca Legacy Tour",
+        "imageSmall":"inca-small.jpg",
+        "textInfo":"Includes 7 nights in 4-star accommodations, all domestic transportation, entrance fees to all sites,
+        daily breakfast, and several specialty meals showcasing local cuisine."
+        }
+      </include>
+
+      <include src="./html/tours/_article.html">
+        {
+        "id":"adventure",
+        "title":"Andean Explorer - 10 Days",
+        "text":"Embark on an adventurous journey starting in Arequipa before setting out to conquer the Colca Canyon.
+        Experience white-water rafting on the Urubamba River and trek the renowned Inca Trail to Machu Picchu. Conclude
+        with a day of biking in the Sacred Valley.",
+        "imageBig":"andean-big.jpg",
+        "alt":"Andean Explorer",
+        "imageSmall":"andean-small.jpg",
+        "textInfo":"Includes 9 nights in various accommodations from eco-lodges to comfortable campsites, all
+        transportation during the tour, professional bilingual guides, and all necessary equipment."
+        }
+      </include>
+
+      <include src="./html/tours/_article.html">
+        {
+        "id":"vacations",
+        "title":"Northern Beaches Getaway - 5 Days",
+        "text":"Relax and unwind on Peru’s northern coast. Enjoy the sandy beaches of Máncora and Punta Sal, perfect for
+        surfing and sunbathing. Take a day trip to the nearby Tumbes Mangroves for a chance to see diverse wildlife and
+        enjoy a fresh seafood dinner by the ocean.",
+        "imageBig":"northern-big.jpg",
+        "alt":"Northern Beaches Getaway",
+        "imageSmall":"northern-small.jpg",
+        "textInfo":"Includes 4 nights in a beachfront hotel, daily breakfast, two special seafood dinners, and transfers
+        to/from the airport."
+        }
+      </include>
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>
